@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>you-block</title>
+</head>
+<body>
+    <p>My name is koala</p>
+    <div id="imageDiv">
+        <img src="resources/image/icon48.png" id="koalaImage">
+        </div>
+    <hr>
+    <div class="controls ">
+        <button class="controls__button" id="15min" value="25">Alarm in 25 mins</button>
+        <button class="controls__button" id="cancelAlarm">Cancel Alarm</button>
+    </div>
+
+    <div class="checkbox ">
+        <input type="checkbox" id="sound" name="sound">
+        <label class="checkbox__label" for="sound">Play sound</label>
+    </div>
+    <div class="social-links ">
+        <a class="social-links__link" href="https://stackoverflow.com" target="_blank">
+            <img src="resources/image/stackoverflow.png" alt="StackOverflow" title="StackOverflow" />
+        </a>
+
+        <a class="social-links__link" href="https://github.com" target="_blank">
+            <img src="resources/image/github-icon.png" alt="GitHub" title="GitHub" />
+        </a>
+
+        <a class="social-links__link" href="https://linkedin.com" target="_blank">
+            <img src="resources/image/linkedin.png" alt="linkedin" title="Linkedin" />
+        </a>
+
+        <a class="social-links__link" href="https://twitter.com" target="_blank">
+            <img src="resources/image/twitter.png" alt="Twitter" title="Twitter" />
+        </a>
+        
+    </div>
+    <audio id="alarm" src="resources/audio/alarm.mp3"></audio>
+    <script src="popup.js"></script>
+</body>
+</html>

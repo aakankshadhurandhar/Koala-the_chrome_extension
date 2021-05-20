@@ -1,0 +1,29 @@
+{
+    "name":"koala",
+    "description": "Build a block and alarm extension!",
+    "version":"1.0",
+    "manifest_version": 2,
+    "permissions": ["alarms", "notifications", "storage"],
+    "content_scripts": [
+        {
+          "matches": ["https://*.youtube.com/*"],
+          "css": ["youtube.css"],
+          "js": ["youtube.js"]
+        }
+      ],
+    "browser_action":{
+        "default_popup":"popup.html",
+        "default_icon":{
+            "128":"resources/image/icon128.png",
+            "48":"resources/image/icon48.png"
+        }
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+      },
+    "icons": {
+        "48": "resources/image/icon48.png",
+        "128": "resources/image/icon128.png"
+      }
+}
